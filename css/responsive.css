@@ -1,0 +1,53 @@
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {
+.navbar .bar-toggler{display: block;}
+ .logo-effect{padding: 0 80px;}
+ .left-bar{width: 100%;text-align: center;}
+ .top-bar ul li{width: 100%;margin: 0;}
+ .top-bar ul.left-bar li a{width: 100%;margin: 0;}
+ .top-bar .top-right-nav{width: 100%;}
+ .top-bar .top-right-nav ul{display: flex;justify-content: center;}
+ .top-bar .top-right-nav ul li{display: contents;}
+ figure{width: 240px;height: 148px;}
+ .banner .banner-title{font-size: 30px;line-height: 34px;width: 290px;}
+ .banner.banner-height{height: 72vh;}
+ .banner{background-position: 78% 100%;}
+ .appoinment-form{width: 312px;}
+ .appoinment-form form{height: 480px;}
+ .appoinment-form form input{height: 40px; margin: 0;}
+ .appoinment-form form textarea{height: 180px;}
+ .appoinment-form form .custom-btn{padding: 8px 5px;margin-top: 0;line-height: 1.3;font-size: 13px;}
+ .navbar .bar-toggler{padding: 0 20px;}
+ .appoinment-btn button.btn{top: 60px;right: 50px;}
+ .about a.nav-link::before{content: '';position: absolute;height: 15px;right: 155px;top: 0;bottom: -118px;margin: auto;border-top: 15px solid transparent;border-bottom: 15px solid transparent;border-right: 15px transparent;transform: rotate(90deg);}
+ .service-box .service-img img{width: 80px;margin: 12px;}
+ .counter-sec{padding-top: 80px;}
+ #comparison {height: 110px;}
+ .our-address .contact-data p{display: inline;}
+ .owl-nav .owl-next{right: -8px;}
+ .owl-nav .owl-prev{left: -8px;}
+ .counter-sec .counter-one{margin-bottom: 25px;}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+.navbar .bar-toggler{display: block;}
+ .banner.banner-height{height: 80vh;}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+ .navbar .bar-toggler{display: block;}
+ .about a.nav-link::before{content: '';position: absolute;height: 15px;right: 155px;top: 0;bottom: -118px;margin: auto;border-top: 15px solid transparent;border-bottom: 15px solid transparent;border-right: 15px transparent;transform: rotate(90deg);}
+ .about .about-pic img{margin: 35px 0;}
+
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+
+}
