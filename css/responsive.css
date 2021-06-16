@@ -3,11 +3,12 @@
 
 /* // Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
+  .top-bar{padding: 0;}
 .navbar .bar-toggler{display: block;}
  .logo-effect{padding: 0 80px;}
  .left-bar{width: 100%;text-align: center;}
  .top-bar ul li{width: 100%;margin: 0;}
- .top-bar ul.left-bar li a{width: 100%;margin: 0;}
+ .top-bar ul.left-bar li a{width: 100%;margin: 0;font-size: 15px;}
  .top-bar .top-right-nav{width: 100%;}
  .top-bar .top-right-nav ul{display: flex;justify-content: center;}
  .top-bar .top-right-nav ul li{display: contents;}
@@ -24,12 +25,19 @@
  .appoinment-btn button.btn{top: 60px;right: 50px;}
  .about a.nav-link::before{content: '';position: absolute;height: 15px;right: 155px;top: 0;bottom: -118px;margin: auto;border-top: 15px solid transparent;border-bottom: 15px solid transparent;border-right: 15px transparent;transform: rotate(90deg);}
  .service-box .service-img img{width: 80px;margin: 12px;}
+ .contactus .head-title h3{margin-bottom: 0;font-size: 28px;padding-top: 30px;}
  .counter-sec{padding-top: 80px;}
  #comparison {height: 110px;}
- .our-address .contact-data p{display: inline;}
  .owl-nav .owl-next{right: -8px;}
  .owl-nav .owl-prev{left: -8px;}
  .counter-sec .counter-one{margin-bottom: 25px;}
+ .our-address .contact-data .mail{font-size: 12px;}
+ .our-address .three{display: inline-flex;}
+ .footer .copy-right .list-unstyled .list-inline-item{margin: 0;font-size: 16px;}
+ .footer .copy-right{font-size: 18px;}
+ .our-address .one .contact-det p{line-height: 18px;letter-spacing: 1px;font-size: 12px;}
+ .footer .copy-right p{font-size: 11px;}
+ .contactus .subbtn{display: flex;justify-content: center;margin-bottom: 25px;top: -19px;}
 }
 
 /* // Medium devices (tablets, 768px and up) */

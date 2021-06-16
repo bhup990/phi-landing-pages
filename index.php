@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
   <html lang="en">
     <head>
@@ -11,25 +12,15 @@
       <!-- font-awesome -->
       <link rel="stylesheet" type="text/css" href="css/all.min.css">
       <link rel="stylesheet" href="css/fonts-awesome.min.css">
-      <!-- AOS JS -->
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <!-- owl carosoul css -->
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
        <!-- CSS-->
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       <!-- Responsive Css  -->
       <link rel="stylesheet" href="css/responsive.css">
       </head>
       <body>
-        <!-- preloader -->
-
-        <!--End preloader -->
-
-        <!-- Up Arrows -->
-        <div id="gouparrow">
-          <a href="#" class="btn" topFunction()> <i class="fas fa-chevron-up"></i> </a>
+        <div id="whatsupLink">
+          <a href="https://wa.link/7mb83b" target="_blank"><img src="img/whatapp.png" alt="whatapp link"><p> Message Us</p></a>
         </div>
-        <!-- Up Arrows -->
        <main>
 
         <div class="wrapper">
@@ -37,15 +28,15 @@
     		<div class="top-bar">
     			<div class="container">
     				<ul class="left-bar">
-    					<li><a href="tel:+1800"><i class="fa fa-phone"></i> +1800 Hospital Help</a></li>
+    					<li><a href="tel:+91 22 25225150"><i class="fa fa-phone"></i> +91 22 25225150</a></li>
     					<li><a class="hours"><i class="fa fa-clock-o" aria-hidden="true"></i> Mon - Fri: 9:00 19:00 / closed on weekends</a></li>
     				</ul>
     				<div class="top-right-nav text-right">
     					<ul class="right-text">
-    						<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-    						<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-    						<li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-    						<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+    						<li><a href="https://www.facebook.com/PHICosmeticClinic/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+    						<li><a href="https://twitter.com/PhiCosmetic" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+    						<li><a href="https://www.instagram.com/phiskinandhairclinic/" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+    						<li><a href="mailto:wecare@phicosmeticclinic.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
     					</ul>
     				</div>
     			</div>
@@ -65,67 +56,19 @@
     					</div>
     				</div>
     			</div>
-    			<div class="appoinment-btn">
-    				<button type="button" class="btn" onclick="openBookAppmt(this)"><i class="fas fa-pencil-alt" aria-hidden="true"></i></button>
-    			</div>
         </section>
     			<!-- Start Navbar -->
-    			<nav class="navbar navbar-expand-lg custom-navbar" id="navigation">
+    			 <nav class="navbar navbar-expand-lg custom-navbar" id="navigation">
     				<div class="logo-effect"></div>
-    				<div class="container top-padd">
+    				<div class="container top-padd d-print-flex justify-content-center">
     					<div class="b-color">
     						<div class="logo">
-    							<a href="#"><img src="img/logo.png" alt="" class="logo-img img-fluid"></a>
-    						</div>
-    						<div class="bar-toggler">
-    							<div class="bar1"></div>
-    							<div class="bar2"></div>
-    							<div class="bar3"></div>
-    						</div>
-    						<div class="collapse navbar-collapse" id="mynav">
-      							<ul class="navbar-nav ml-auto">
-    								<li class="nav-item">
-    									<a class="nav-link active page-scroll" href="#home">Home</a>
-    								</li>
-    								<li class="nav-item">
-    									<a class="nav-link page-scroll" href="#about">About us</a>
-    								</li>
-    								<li class="nav-item">
-    									<a class="nav-link page-scroll" href="#service">Service</a>
-    								</li>
-    								<li class="nav-item">
-    									<a class="nav-link page-scroll" href="#doctor">Doctors</a>
-    								</li>
-    								<li class="nav-item">
-    									<a class="nav-link page-scroll" href="#pricing">Pricing</a>
-    								</li>
-    								<!-- <li class="nav-item">
-    									<a class="nav-link page-scroll" href="#gallery">Gallery</a>
-    								</li> -->
-    								<li class="nav-item">
-    									<a class="nav-link page-scroll" href="#contact">Contact</a>
-    								</li>
-    							</ul>
+    							<a href="#"><img src="img/phi-new-logo.jpg" alt="" class="logo-img img-fluid"></a>
     						</div>
     					</div>
     				</div>
     			</nav>
     			<!-- End Navbar -->
-
-          <!-- Start Mobile Menu -->
-          <nav class="navbar-mobile" id="navbar-mobile">
-            <div class="mobile">
-              <ul>
-                <li> <a href="#home">home</a></li>
-                <li> <a href="#about">about us</a></li>
-                <li> <a href="#service">service</a></li>
-                <li> <a href="#doctor">doctors</a></li>
-                <li> <a href="#pricing">Pricing</a></li>
-                <li> <a href="#contact">contact</a></li>
-              </ul>
-            </div>
-          </nav>
-          <!--End Mobile Menu -->
     		<!-- End Banner -->
     <!-- Start About Us -->
     <section class="section about" id="about">
@@ -323,270 +266,8 @@
     </div>
   <!--End Our service -->
 
- <!-- start Counter -->
-  <div class="counter-sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
-              <div class="counter-area counter-one">
-                <div class="counter-icon">
-                  <img src="img/c1.png" alt="">
-                </div>
-                <span class="counter-number">20 Year</span>
-                <span class="counter-decs">YEAR OF EXPERIENCE</span>
-              </div>
-            </div>
-
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-              <div class="counter-area">
-                <div class="counter-icon">
-                  <img src="img/c2.png" alt="">
-                </div>
-                <span class="counter-number">2454</span>
-                <span class="counter-decs">HAPPY PATIENTS</span>
-              </div>
-            </div>
-
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 counter-top">
-              <div class="counter-area">
-                <div class="counter-icon">
-                  <img src="img/c3.png" alt="">
-                </div>
-                <span class="counter-number">99</span>
-                <span class="counter-decs">QUALIFIED DOCTORS</span>
-              </div>
-            </div>
-
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 counter-top">
-              <div class="counter-area">
-                <div class="counter-icon">
-                  <img src="img/c4.png" alt="">
-                </div>
-                <span class="counter-number">25</span>
-                <span class="counter-decs">HOSPITAL ROOMS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pt-4">
-          <div class="left-img">
-            <img src="img/counter.png" alt="" class="w-100">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- end counter  -->
-
-<!-- start smart doctors header -->
-<div class="container" id="doctor">
-  <div class="row">
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-      <div class="head-title">
-        <h2>Smart Doctors</h2>
-        <p>Etiam erat turpis, bibendum sit amet pulvinar vitae</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- start smart doctors header -->
-<!--Start Smart Doctors -->
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="carosoul-wapper">
-        <div class="owl-carousel owl-theme">
-
-            <div class="item">
-              <img src="img/doctor1.png" alt="">
-              <div class="overlay">
-                <div class="text">
-                  <ul>
-    								<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-    							</ul>
-                </div>
-              </div>
-              <div class="doctor-name">
-                <h3>Doctor Name</h3>
-                <p>Doctor designation</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <img src="img/doctor2.png" alt="">
-              <div class="overlay">
-                <div class="text">
-                  <ul>
-    								<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-    							</ul>
-                </div>
-              </div>
-              <div class="doctor-name">
-                <h3>Doctor Name</h3>
-                <p>Doctor designation</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <img src="img/doctor3.png" alt="">
-              <div class="overlay">
-                <div class="text">
-                  <ul>
-    								<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-    							</ul>
-                </div>
-              </div>
-              <div class="doctor-name">
-                <h3>Doctor Name</h3>
-                <p>Doctor designation</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <img src="img/doctor4.png" alt="">
-              <div class="overlay">
-                <div class="text">
-                  <ul>
-    								<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-    							</ul>
-                </div>
-              </div>
-              <div class="doctor-name">
-                <h3>Doctor Name</h3>
-                <p>Doctor designation</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <img src="img/doctor1.png" alt="">
-              <div class="overlay">
-                <div class="text">
-                  <ul>
-    								<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-    								<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-    							</ul>
-                </div>
-              </div>
-              <div class="doctor-name">
-                <h3>Doctor Name</h3>
-                <p>Doctor designation</p>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
- <!-- End Smart Doctors -->
-
- <!-- start Our Pricing header -->
- <div class="container" id="pricing">
-   <div class="row">
-     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-       <div class="head-title">
-         <h2>Our Pricing</h2>
-         <p>Etiam erat turpis, bibendum sit amet pulvinar vitae</p>
-       </div>
-     </div>
-   </div>
- </div>
- <!-- End Our Pricing header -->
-<!-- start Our Pricing  -->
-<div class="container mb-5">
-  <div class="row">
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-      <div class="pricing-area">
-        <div class="pricing-img">
-          <img src="img/pricing-1.png" alt="">
-        </div>
-        <div class="pricing-desc">
-          <h3>TEETH WHITENING</h3>
-          <span>$33</span>
-          <h5>First Round</h5>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-      <div class="pricing-area">
-        <div class="pricing-img">
-          <img src="img/pricing-2.png" alt="">
-        </div>
-        <div class="pricing-desc">
-          <h3>TEETH WHITENING</h3>
-          <span>$33</span>
-          <h5>First Round</h5>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-      <div class="pricing-area">
-        <div class="pricing-img">
-          <img src="img/pricing-3.png" alt="">
-        </div>
-        <div class="pricing-desc">
-          <h3>TEETH WHITENING</h3>
-          <span>$33</span>
-          <h5>First Round</h5>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-<!-- End Our Pricing -->
-
-<!-- start parent -->
-  <div class="producer" id="producer">
-  </div>
-    <!-- start Producer header -->
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-          <div class="head-title">
-            <h2>Cleaning And Whitening Procedure</h2>
-            <p>Etiam erat turpis, bibendum sit amet pulvinar vitae</p>
-          </div>
-        </div>
-      </div>
-    </div>
-   <!-- End Producer header -->
-   <!-- Producer -->
-   <div class="container">
-     <div id="comparison">
-       <figure>
-         <div id="handle"></div>
-         <div id="divisor"></div>
-         <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
-       </figure>
-     </div>
-  </div>
- <!-- Producer -->
-
  <!-- Google Map -->
- <div id="googleMap" style="width:100%;height:450px;">
+ <div id="googleMap" style="width:100%;height:450px;margin-top: 35px;">
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1845767549676!2d72.89806795670438!3d19.055620662165982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c726d204240f%3A0xe3ab584766eef0e6!2sPhi%20Cosmetic%20Clinic!5e0!3m2!1sen!2sin!4v1608276700147!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
   <!-- Google Map -->
@@ -598,34 +279,34 @@
         <div class="head-title">
           <h3>Send Us Message</h3>
         </div>
-        <form class="" action="index.html" method="post">
+        <form action="message_us.php" method="post">
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <input type="text" name="" placeholder="First Name*">
+              <input type="text" name="name" placeholder="Enter your name" required>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <input type="text" name="" placeholder="Surname*">
+              <input type="email" name="email" placeholder="Email" required>
             </div>
           </div>
 
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <input type="text" name="" placeholder="Your Email*">
+              <input type="text" pattern="[1-9]{1}[0-9]{9}" name="mobileno" placeholder="Mobile number" required>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <input type="text" name="" placeholder="Your phone number*">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <textarea name="Message" rows="8" cols="40" placeholder="Your Message..."></textarea>
+              <input type="text" name="city" placeholder="City" required>
             </div>
           </div>
 
           <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <button class="subBtn" type="button" name="button">Send Message</button>
+              <textarea name="message" rows="8" cols="40" placeholder="Your Message..."></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 subbtn">
+              <a href="#"><button class="subBtn" type="submit" name="sumitBtn">Send Message</button></a>
             </div>
           </div>
         </form>
@@ -648,7 +329,7 @@
 									</div>
 									<div class="contact-det">
 										<h6 class="mb-0">Address</h6>
-										<p class="mt-1 mb-0">6568 Allisan Turnpike Creminfort, <br> Al 32808-4590</p>
+										<p class="mt-1 mb-0">301, Glamcent, Opp. OLPS Church, Above IDFC Bank, Central Avenue Road , Chembur East, Mumbai -71.</p>
 									</div>
 								</div>
 							</div>
@@ -659,7 +340,7 @@
 									</div>
 									<div class="contact-det">
 										<h6 class="mb-0">Call Us</h6>
-										<p class="mt-1 mb-0"><a href="tel:+0123-456-789">+0123-456-789</a> / <br> <a href="tel:+0123-456-789">+0123-456-789</a></p>
+										<p class="mt-1 mb-0"><a href="tel:+91 9167 167312">+91 9167 167312</a> <br> <a href="tel:+91 22 25225150">+91 22 25225150</a></p>
 									</div>
 								</div>
 							</div>
@@ -670,7 +351,7 @@
 									</div>
 									<div class="contact-det">
 										<h6 class="mb-0">Email</h6>
-										<p class="mt-1 mb-0"><a href="mailto:">info@example.com</a><br><a href="mailto:info@example.com">info@example.com</a></p>
+										<p class="mt-1 mb-0"><a class="mail" href="mailto:wecare@phicosmeticclinic.com">wecare@phicosmeticclinic.com</a></p>
 									</div>
 								</div>
 							</div>
@@ -678,50 +359,6 @@
           </div>
         </div>
   <!-- contact Us -->
-
-  <!-- Book appoinment -->
-  <div class="appoinment-form" id="appoinment-form">
-    <form action="index.html" method="post">
-      <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-          <h2>Book Your Appointment</h2>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 wow fadeInDown" data-wow-delay=".3s">
-          <div class="form-group mt-2 mb-2">
-            <input name="name" id="name" type="text" class="form-control" placeholder="First Name*" required>
-          </div>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 wow fadeInDown" data-wow-delay=".3s">
-          <div class="form-group mt-2 mb-2">
-            <input name="middle-name" id="middle-name" type="text" class="form-control" placeholder="Surname*" required>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 wow fadeInDown" data-wow-delay=".5s">
-          <div class="form-group mt-2 mb-2">
-            <input name="tele" id="tele" type="text" class="form-control" placeholder="Mobile Number">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 wow fadeInDown" data-wow-delay=".7s">
-          <div class="form-group mt-2 mb-2">
-            <textarea name="message" id="message" rows="4" class="form-control" placeholder="Inquiry"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-2">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 wow fadeInDown" data-wow-delay=".9s">
-          <button type="submit" class="btn custom-btn common-transition">Book Appointment</button>
-        </div>
-      </div>
-    </form>
-  </div>
-  <!-- Book appoinment -->
 </main>
 <!-- Start Footer -->
   <footer class="footer">
@@ -747,10 +384,22 @@
  <script type="text/javascript" src="js/popper.min.js"></script>
  <script type="text/javascript" src="js/bootstrap.min.js"></script>
  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+ <script type="text/javascript" src="js/custom.js"></script>
+ <script type="text/javascript" src="js/sweetalert.min.js"></script>
  <script>
- /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
- initComparisons();
+ <?php
+  if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
+      ?>
+      swal({
+          title: "<?php echo $_SESSION['status']; ?>",
+          // text: "You clicked the button!",
+          icon: "<?php echo $_SESSION['status_code']; ?>",
+          button: "OK",
+      });
+      <?php
+      unset($_SESSION['status']);
+         }
+      ?>
  </script>
 </body>
 </html>

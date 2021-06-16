@@ -33,29 +33,35 @@ ul{
 	list-style: none;
 	margin: 0;
 }
+.error{
+  color: red;
+}
 /* img{
 	width: 100%;
 } */
 /*========================== END BASIC ============================*/
-/* ======================Up Arow========================= */
-#gouparrow{
-    display: none;
+/* ======================whatapps style========================= */
+#whatsupLink a p{
+    width: 100px;
     position: fixed;
-    right: 20px;
-    bottom: 10px;
-    transform: rotate(-90deg);
-    background: #2d2424;
-    z-index: 66666;
+    bottom: 20px;
+    left: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    z-index: 88888;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
 }
-#gouparrow a{
-    color: #fff;
+#whatsupLink a img{
+    width: 60px;
+    position: fixed;
+    z-index: 10000;
+    left: 15px;
+    bottom: 15px;
 }
-#gouparrow a:hover{
-    color: #ffffff;
-    border-color: #a07936;
-    background: #a07936;
-}
-/* ======================Up Arow========================= */
+/* ======================whatapps style========================= */
 /* ***********************style placeholder****************** */
 ::placeholder {
   color: #666666;
@@ -82,6 +88,7 @@ ul{
 	overflow: hidden;
 	bottom: 8px;
   top: 0;
+  padding: 0;
 }
 .custom-navbar.sticky {
 	position: fixed;
@@ -128,13 +135,11 @@ ul{
 }
 
 .logo .logo-img {
-    width: 190px;
+    width: 80px;
     margin: 8px 0;
 }
 .b-color {
-	width: 100%;
-  display: inline-flex;
-	position: relative;
+	width: 90%;
 }
 .logo{
 	z-index: 1;
@@ -491,6 +496,7 @@ ul.ab-list {
    color: #0facef;
  margin-right: 10px;
 }
+/*==========================  END ABOUT ============================*/
 
 /*========================== All Header ============================*/
 .head-title h2{
@@ -508,9 +514,7 @@ ul.ab-list {
   }
 /*========================== All Header ============================*/
 
-/*==========================  END ABOUT ============================*/
-
-/* Start service */
+/*========================== Start service  ============================*/
 .service-box .service-img img{
   width: 100px;
 }
@@ -536,202 +540,7 @@ color: white;
 .service-box:hover .service-decs h4{
   color: #fff;
 }
-/* End service */
-
- /* start Counter  */
- .counter-sec{
-  padding-top: 150px;
- }
- .counter-sec .counter-top{
-   margin-top: 30px;
- }
- .counter-sec .counter-area{
-   background: #fff;
-  text-align: center;
-  padding: 34px 15px;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
- }
- .counter-sec .counter-area .counter-icon img{
-   width: 50px;
- }
-
-.counter-sec .counter-area .counter-number{
-  display: block;
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  font-family: 'Lato', sans-serif;
-}
-.counter-sec .counter-area .counter-decs{
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-  /* start Counter  */
-
-/* Our pricing */
-.pricing-area{
-  background: #fff;
-  text-align: center;
-  padding: 34px;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-}
-.pricing-area .pricing-desc h3{
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 15px 0;
-}
-.pricing-area .pricing-desc span{
-  font-size: 40px;
-    color: #333;
-    font-weight: 800;
-    line-height: 40px;
-    margin-bottom: 15px;
-    display: block;
-}
-.pricing-area .pricing-desc h5{
-      font-size: 18px;
-}
-.pricing-area .pricing-desc p{
-  font-size: 15px;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 0;
-}
-
-    /* producer */
-.producer{
-  background-image: url(../img/procedure.png);
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  opacity: 0.2;
-  position: absolute;
-}
-
-#comparison {
-	width: 100%;
-	overflow: hidden;
-  height: 370px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 160px;
-}
-
-figure {
-  position: absolute;
-	background-image: url(../img/after.png);
-	background-size: cover;
-  width: 690px;
-  height: 410px;
-  box-shadow: 0px 2px 9.5px 0.5px rgb(0 0 0 / 15%);
-  -webkit-box-shadow: 0px 2px 9.5px 0.5px rgb(0 0 0 / 15%);
-  border: 10px solid #fff;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-#divisor {
-	background-image: url(../img/before.png);
-	background-size: cover;
-	position: absolute;
-	width: 100%;
-	/* box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3); */
-	bottom: 0; height: 100%;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    right: -2px;
-    width: 4px;
-    height: calc(50% - 25px);
-    background: white;
-    z-index: 3;
-  }
-  &::before {
-    top: 0;
-    box-shadow: 0 -3px 8px 1px rgba(0,0,0,.3);
-  }
-  &::after {
-    bottom: 0;
-    box-shadow: 0 3px 8px 1px rgba(0,0,0,.3);
-  }
-}
-#handle {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  z-index: 1;
-
-  &::before,
-  &::after {
-    content: '';
-    width: 0;
-    height: 0;
-    border: 6px inset transparent;
-    position: absolute;
-    top: 50%;
-    margin-top: -6px;
-  }
-  &::before {
-    border-right: 6px solid white;
-    left: 50%;
-    margin-left: -17px;
-  }
-  &::after {
-    border-left: 6px solid white;
-    right: 50%;
-    margin-right: -17px;
-  }
-}
-
-input[type=range]{
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	position: absolute;
-	top: 50%; left: -25px;
-  transform: translateY(-50%);
-	background-color: transparent;
-	width: calc(100% + 50px);
-  z-index: 2;
-  cursor: e-resize;
-
-  &:focus,
-  &:active {
-    border: none;
-    outline: none;
-  }
-}
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: none;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: transparent;
-  border: 4px solid white;
-  box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
-}
-input[type=range]::-moz-range-track {
-	-moz-appearance:none;
-	height:15px;
-	width: 100%;
-	background-color: transparent;
-	position: relative;
-	outline: none;
-}
-/* producer */
-
+/*========================== End service  ============================*/
 /* contact */
 .contactus .head-title h3{
   position: relative;
@@ -752,6 +561,10 @@ input[type=range]::-moz-range-track {
   outline: none;
   width: 100%;
   padding: 15px;
+}
+.contactus form input:hover,
+.contactus form textarea:hover{
+  border-color: #9bff9b;
 }
 .contactus form textarea{
   width: 100%;
@@ -777,6 +590,12 @@ input[type=range]::-moz-range-track {
   letter-spacing: 0.1em;
   line-height: 1.3;
   font-size: 16px;
+}
+
+.contactus form .subBtn:hover{
+  transform: translate(0px, -2px);
+  background-color: rgb(82 188 234);
+  border: 1px solid rgb(82 188 234);
 }
 
 .our-address{
@@ -824,148 +643,18 @@ input[type=range]::-moz-range-track {
 }
 .our-address .contact-data p{
   color: #8e8d8d;
-  /* font-size: 16px; */
+  display: table-footer-group;
 }
 .our-address .contact-data a{
   color: #8e8d8d;
   font-size: 16px;
 }
 /* contact */
-
-/* book appoinment */
-.appoinment-form {
-  position: fixed;
-  top: 0;
-  right: -540px;
-  z-index: 99;
-  width: 530px;
-  background-color: #fafafa;
-  box-shadow: 0px 2px 9.5px 0.5px rgb(0 0 0 / 15%);
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  height: 100%;
-  overflow-y: auto;
-}
-.appoinment-form form{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 75%;
-  margin: auto;
-}
-#appoinment-form.active{
-  right:0px;
-}
-.appoinment-form form .custom-btn{
-  background-color: #0facef;
-  border: 1px solid #0facef;
-  margin-top: 4px;
-  font-family: 'Lato', sans-serif;
-  padding: 14px 35px;
-  text-transform: uppercase;
-  color: #fff;
-  box-shadow: none;
-  outline: none;
-  font-weight: 500;
-  border-radius: 0px;
-  margin-top: 30px;
-  letter-spacing: 0.1em;
-  line-height: 1.3;
-  font-size: 16px;
-}
-/* book appoinment */
-/* =================owlCarousel================= */
-/* owl carosoul arrows */
-.owl-nav{
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 100%;
-}
-.owl-nav .owl-prev{
-  padding: 0px !important;
-  position: absolute;
-  border: 1px solid silver!important;
-  background: white!important;
-  left: -20px;
-  border-radius: 31px!important;
-  height: 50px;
-  width: 46px;
-  box-shadow: 0 0px 36px -6px black !important;
-}
-.owl-nav .owl-next{
-  /* font-size: 34px !important; */
-  padding: 0px !important;
-  position: absolute;
-  border: 1px solid silver!important;
-  background: white!important;
-  right: -25px;
-  border-radius: 31px!important;
-  height: 50px;
-  width: 46px;
-  box-shadow: 0 0px 36px -6px black !important;
-}
-  .owl-nav span{
-  font-size: 30px;
-  }
-
-  .carosoul-wapper .owl-carousel .item .doctor-name{
-    position: relative;
-    padding: 15px;
-    text-align: center;
-  }
-  .carosoul-wapper .owl-carousel .item .doctor-name h3{
-  font-size: 18px;
-  font-weight: 600;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  text-transform: uppercase;
- }
-  .carosoul-wapper .owl-carousel .item .overlay{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 100%;
-    transition: .5s ease;
-    height: 0%;
-  }
-  .carosoul-wapper .owl-carousel .item:hover .overlay{
-    height: 30%;
-  }
-  .carosoul-wapper .owl-carousel .item:hover .doctor-name h3,
-  .carosoul-wapper .owl-carousel .item:hover .doctor-name p{
-  color: white;
-  }
-  .owl-carousel .owl-item img{
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .carosoul-wapper .owl-carousel .item .overlay .text{
-    width: 100%;
-    padding: 25px 0;
-  }
-  .carosoul-wapper .owl-carousel .item .overlay .text ul{
-    display: flex;
-    justify-content: space-around;
-  }
-  .carosoul-wapper .owl-carousel .item .overlay .text ul li a{
-    color: white;
-  }
-/* =================owlCarousel================= */
-/* footer */
 .footer{
   padding: 30px 0;
 }
 .footer .copy-right{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 /* footer */
