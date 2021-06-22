@@ -4,8 +4,6 @@ session_start();
 include 'conn.php';
 require 'phpmailer/PHPMailerAutoload.php';
 if (isset($_POST['sumitBtn'])) {
-  // define variables and set to empty values
-  $nameErr = $emailErr = $mobileErr = $city = $message = "";
 
   $name = $_POST['name'];
   $email = $_POST['email'];
